@@ -1,0 +1,49 @@
+// http://getbootstrap.com/docs/4.0/getting-started/theming/#variable-defaults
+
+// colors
+$styleguide-color: #343a40;
+$body-bg: #fff;
+$body-color: #212529;
+$font-size-base: 1rem;
+$atlantis: #97C428;
+$dusty-gray: #949494;
+$light-gray: #969696;
+$white: #FFFFFF;
+$black: #000000;
+$tundora: #494949;
+$silver: #C6C6C6;
+$silver-chalice: #9F9F9F;
+$shuttle-gray: #5C6773;
+$fuscous-gray: #50514D;
+$heavy-metal: #383936;
+$celeste: #CCCDC6;
+$scorpion: #5E5E5E;
+$gray: #808080;
+$dove-gray: #716D6D;
+$mine-shaft: #3F3F3F;
+$alabaster: #F7F7F7;
+$iron: #E0E1E1;
+$porcelain: #f1f4f4;
+$mercury: #E7E7E7;
+$boulder: #7A7878;
+$tuscany: #C44D28;
+$gallery: #EDEDED;
+$curious-blue: #2893c4;
+$gray-light: #858484;
+$citron: #80a722;
+$shark: #242b32;
+$seashell: #F1F1F1;
+$cape-cod: #505151;
+
+$theme-colors: (
+	"primary": #0074d9,
+	"danger": #ff4136
+);
+
+// container
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1170px
+);

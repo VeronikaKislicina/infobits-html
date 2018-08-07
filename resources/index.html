@@ -1,0 +1,36 @@
+---
+title: Select a Page
+layout: demo
+---
+
+<div class="band"></div>
+
+<div class="container my-4">
+    <div class="row">
+        <div class="col col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
+            <div class="list-group">
+                <div class="list-group-item text-center">
+                    Project logo here
+                </div>
+                <div class="list-group-item p-1">
+                    <span class="last-update">Updated: {{ "now" | date: "%-d %b, %Y at %H:%M" }}</span>
+                </div>
+                <a href="{{ '/styleguide.html' | relative_url }}" class="list-group-item list-group-item-action">Styleguide</a>
+                <div class="list-group-item list-group-item-action disabled bg-light py-1">Pages</div>
+                <a href="{{ '/landing.html' | relative_url }}" class="list-group-item list-group-item-action">Home</a>
+                <a href="{{ '/articles.html' | relative_url }}" class="list-group-item list-group-item-action">Raksti</a>
+                <a href="{{ '/articles-full.html' | relative_url }}" class="list-group-item list-group-item-action">Raksti Full</a>
+                <a href="{{ '/categories.html' | relative_url }}" class="list-group-item list-group-item-action">Kategorijas</a>
+                <a href="{{ '/list.html' | relative_url }}" class="list-group-item list-group-item-action">Uzņēmumu saraksts</a>
+                <a href="{{ '/profile.html' | relative_url }}" class="list-group-item list-group-item-action">Profils</a>
+                <a href="{{ '/contacts.html' | relative_url }}" class="list-group-item list-group-item-action">Kontakti</a>
+                <a href="{{ '/favorites.html' | relative_url }}" class="list-group-item list-group-item-action">Favoriti</a>
+                <a href="{{ '/add2.html' | relative_url }}" class="list-group-item list-group-item-action">Pievienot2</a>
+                <a href="{{ '/sign-up.html' | relative_url }}" class="list-group-item list-group-item-action">Sign-up modal</a>
+                <a href="{{ '/sign-up-reg.html' | relative_url }}" class="list-group-item list-group-item-action">Register modal</a>
+                <a href="{{ '/reviews.html' | relative_url }}" class="list-group-item list-group-item-action">Atsauksmes</a>
+                <!-- ... -->
+            </div>
+        </div>
+    </div>
+</div>

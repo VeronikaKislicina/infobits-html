@@ -1,0 +1,251 @@
+/*header {
+  @include media-breakpoint-down(lg) {
+    height: 100%;
+  }
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+
+    @include media-breakpoint-down(lg) {
+      flex-direction: column;
+    }
+
+    .left-part {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding-top: 50px;
+
+      h4 {
+        color: $white;
+        font-size: 25px;
+        font-weight: 600;
+        letter-spacing: 2px;
+      }
+    }
+
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding-top: 44px;
+      padding-bottom: 45px;
+
+      @include media-breakpoint-down(md) {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .img-wrapper {
+        position: relative;
+
+      .location-pic, .select-pic {
+        position: absolute;
+        left: 168px;
+        z-index: 4;
+        top: 9px;
+
+        @include media-breakpoint-down(md) {
+          left: 92%;
+        }
+      }
+
+      .select-pic {
+        @include media-breakpoint-down(md) {
+          left: 92.5%;
+          top: 25%;
+        }
+      }
+    }
+
+     .category {
+      position: absolute;
+      margin-left: 617px;
+      bottom: 57px;
+      z-index: 4;
+      }
+    }
+  }
+} // /header
+
+.select {
+  background: $porcelain;
+
+  .container {
+    padding: 0;
+
+    @include media-breakpoint-down(md) {
+      padding: 0 10px;
+    }
+  }
+
+  .package {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 0;
+    }
+
+    h3 {
+      margin: 68px 0 0 0;
+      padding: 0;
+      align-self: center;
+
+      @include media-breakpoint-down(md) {
+        font-size: 30px;
+      }
+    }
+
+    h5 {
+      align-self: center;
+      font-size: 16px;
+      color: $light-gray;
+      margin: 12px 0 0 0;
+      font-weight: 300;
+      padding-bottom: 3px;
+    }
+
+    .line {
+      width: 100px;
+      border-top: 2px solid $silver;
+      align-self: center;
+      margin: 18px 0 70px 0;
+
+      @include media-breakpoint-down(lg) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+    }
+
+    .block {
+      margin-bottom: 103px;
+
+      @include media-breakpoint-down(md) {
+        margin-bottom: 30px;
+      }
+
+      .green-box {
+        background: $atlantis;
+      }
+
+      .blue-box {
+        background: $curious-blue;
+      }
+
+      .red-box {
+        background: $tuscany;
+      }
+
+      .green-box, .blue-box, .red-box {
+        color: $white;
+        height: 50px;
+        width: 370px;
+        margin: 5px 0;
+        display: flex;
+        justify-content: center;
+
+        @include media-breakpoint-down(lg) {
+          width: 300px;
+        }
+
+        @include media-breakpoint-down(md) {
+          width: 100%;
+        }
+
+        a {
+          color: $white;
+          font-size: 25px;
+          line-height: 0;
+          font-weight: bold;
+          align-self: center;
+          cursor: default;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background: $white;
+      border: 1px solid $gallery;
+      width: 370px;
+
+      @include media-breakpoint-down(lg) {
+        width: 300px;
+      }
+
+      @include media-breakpoint-down(md) {
+        width: 100%;
+      }
+
+      li {
+        margin: 0 6px;
+        padding: 0;
+        border-bottom: 0.5px solid $gallery;
+        line-height: 40px;
+        font-size: 12px;
+        display: flex;
+
+        &:nth-child(8) {
+          border: none;
+        }
+
+        span {
+          font-size: 30px;
+          font-weight: bold;
+        }
+
+        .span-blue {
+          color: $curious-blue;
+        }
+
+        .span-red {
+          color: $tuscany;
+        }
+
+        a {
+          color: $dove-gray;
+          margin: auto;
+
+          &:nth-child(1) {
+            margin-bottom: -8px;
+          }
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+
+        img {
+          position: absolute;
+          margin-left: 14px;
+          margin-top: 12px;
+          width: 8px;
+          height: 12px;
+        }
+
+        .btn-black-transparrent {
+          margin: 21px auto 26px auto;
+        }
+      } // /li
+    }
+  }
+}
+*/

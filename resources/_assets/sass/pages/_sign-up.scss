@@ -1,0 +1,178 @@
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+
+  @include media-breakpoint-down(sm) {
+    height: auto;
+    content: none;
+  }
+}
+
+.modal-dialog {
+  display: inline-block;
+  vertical-align: middle;
+
+  @include media-breakpoint-down(md) {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+
+#myLoginModal, #myRegModal {
+
+  @include media-breakpoint-down(md) {
+    padding: 1px;
+    margin: 1px;
+  }
+}
+
+.modal-backdrop {
+  opacity:0.8 !important;
+}
+
+  .login-box {
+
+    .green-block {
+      z-index: 100;
+      width: 630px;
+      position: relative;
+
+      @include media-breakpoint-down(md) {
+        width: 100%;
+      }
+
+      .big-block {
+        background: $atlantis;
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+          text-align: center;
+          line-height: 0;
+          font-size: 35px;
+          font-weight: 600;
+          color: $white;
+          padding-top: 74px;
+          padding-bottom: 65px;
+
+          @include media-breakpoint-down(sm) {
+            font-size: 30px;
+          }
+        }
+        .close {
+          position: absolute;
+          opacity: 1;
+          cursor: pointer;
+          right: 2.5% !important;
+          top: 1.5% !important;
+
+          img {
+            margin: 0;
+            padding: 0;
+          }
+        }
+
+        form {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          @include media-breakpoint-down(sm) {
+            width: 100%;
+          }
+
+          .wrapper {
+            position: relative;
+            &:nth-child(2) {
+              margin-top: 22px;
+            }
+
+            &:nth-child(3) {
+              margin-top: 17px;
+            }
+
+            &:nth-child(4) {
+              margin-top: 14px;
+            }
+
+            img {
+              position: absolute;
+              top: 18px;
+              left: 16px;
+
+            }
+            .key {
+              top: 15px;
+              left: 14px;
+            }
+          }
+
+          .btn-white-modal {
+            display: flex;
+            align-self: center;
+            margin: 26px auto 32px auto;
+          }
+        } // /form
+
+        a {
+          align-self: center;
+          text-decoration: none;
+          color: $white;
+          margin-bottom: 36px;
+          font-size: 14px;
+          font-weight: 600;
+
+          &:hover {
+            transition: all 0.3s ease-in-out;
+            color: darken($citron, 20%);
+            text-decoration: none;
+          }
+
+          img {
+            margin-right: 10px;
+          }
+        }
+      } //big-block
+
+      .small-block {
+        background: #8fba26;
+        display: flex;
+        flex-direction: column;
+
+        p {
+          align-self: center;
+          margin: 67px auto 14px auto;
+          font-size: 16px;
+          color: $white;
+        }
+
+        a {
+          align-self: center;
+          font-weight: 600;
+          font-size: 25px;
+          line-height: 0.5;
+          text-transform: uppercase;
+          color: $white;
+
+          &:hover {
+            transition: all 0.3s ease-in-out;
+            color: darken($citron, 20%);
+            text-decoration: none;
+          }
+        }
+
+        img {
+          margin: 14px auto 54px auto;
+          align-self: center;
+        }
+      }
+    }
+  }

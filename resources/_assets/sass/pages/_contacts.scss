@@ -1,0 +1,205 @@
+.contacts {
+  background: $white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+  @include media-breakpoint-down(md) {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .left-block {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
+
+    .gray-block {
+      padding-left: 9%;
+      background: $alabaster;
+
+      @include media-breakpoint-down(lg) {
+        margin-left: 0;
+      }
+
+      .container {
+
+        ul {
+          padding: 0;
+          margin: 45px 0 37px 0;
+
+          li {
+            list-style-type: none;
+            margin-top: 33px;
+            font-size: 14px;
+            font-weight: 300;
+            color: $boulder;
+            line-height: 0;
+
+            img {
+              margin-right: 27px;
+            }
+
+            a {
+              color: $boulder;
+            }
+          }
+        }
+      }
+    } // /gray-block
+
+    .white-block {
+      background: $white;
+      padding-left: 9%;
+
+      @include media-breakpoint-down(lg) {
+        margin-left: 0;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+
+        .top {
+          p {
+            color: $silver;
+            font-size: 15px;
+            font-weight: bold;
+            margin-top: 35px;
+            margin-bottom: 16px;
+
+            @include media-breakpoint-down(md) {
+              text-align: center;
+            }
+          }
+        }
+
+        .wrapper {
+          display: flex;
+
+          @include media-breakpoint-down(md) {
+            justify-content: space-around;
+          }
+
+            ul {
+              padding: 0;
+              margin-bottom: 71px;
+
+              li {
+                list-style-type: none;
+                margin-top: 30px;
+                font-size: 14px;
+                line-height: 0;
+
+                span {
+                  color: #C43728;
+                }
+              }
+            }
+
+            .left {
+              justify-content: left;
+              color: $boulder;
+              font-weight: 300;
+            }
+
+            .right {
+              margin-left: 169px;
+              text-align: right;
+              color: $atlantis;
+              font-weight: bold;
+
+              @include media-breakpoint-down(md) {
+                margin-left: 0;
+                margin-bottom: 40px;
+                position: relative;
+              }
+            }
+          }
+        }
+      }
+    } // /left-block
+
+    .picture {
+      right: 0;
+      background-image: url('../img/background/kontakti-pic.jpg');
+      background-repeat: no-repeat;
+      width: 50%;
+      height: 571px;
+      margin: 0;
+      padding: 0;
+
+      @include media-breakpoint-down(md) {
+        width: 100%;
+        background-size: cover;
+        height: auto;
+      }
+    }
+
+    .form-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      @include media-breakpoint-down(lg) {
+        display: block;
+      }
+
+        .text {
+          text-align: center;
+          margin-top: 90px;
+          margin-bottom: 42px;
+          color: $tundora;
+          font-size: 25px;
+          font-weight: bold;
+
+          @include media-breakpoint-down(lg) {
+            margin-bottom: 10px;
+          }
+
+          p {
+            margin: 0;
+          }
+        }
+
+        form {
+          align-self: center;
+          width: 80%;
+
+          @include media-breakpoint-down(lg) {
+            width: 100%;
+          }
+
+          .input-top-part {
+            display: flex;
+    				justify-content: space-between;
+
+            @include media-breakpoint-down(lg) {
+              display: flex;
+              flex-direction: column;
+            }
+          }
+
+          .input-top-part, .message {
+            align-self: center;
+          }
+
+
+          .button {
+            display: flex;
+            justify-content: center;
+            margin-top: 65px;
+            margin-bottom: 63px;
+
+            @include media-breakpoint-down(lg) {
+              margin-top: 10px;
+              margin-bottom: 27px;
+            }
+          }
+        }
+      }
+    } // /section

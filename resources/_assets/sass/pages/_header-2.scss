@@ -1,0 +1,132 @@
+.transparent-link {
+  margin: 9px 0 10px 7px;
+  padding: 7px 18px 5px 12px !important;
+  border: 1px solid $white;
+  color: $white;
+  background: $atlantis;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: normal !important;
+
+  @include media-breakpoint-down(md) {
+    margin: 10px 0;
+    border: 0;
+    text-decoration: underline !important;
+    font-weight: bold !important;
+    padding: 0 0 0 7px !important;
+  }
+
+  &:hover {
+    opacity: 0.8;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    background: $white;
+    color: $atlantis !important;
+    border: 1px solid $white;
+    text-decoration: none !important;
+
+    @include media-breakpoint-down(md) {
+      background: $atlantis;
+      color: $heavy-metal !important;
+      border: 0;
+      text-decoration: underline !important;
+    }
+   }
+}
+
+.links {
+  padding-left: 20px;
+
+  @include media-breakpoint-down(md) {
+    padding: 5px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: 0;
+  }
+}
+
+.header-bottom {
+  .header-2 {
+    display: flex;
+    justify-content: space-between;
+
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+    }
+
+    .it-enterprises {
+      display: flex;
+      list-style-type: none;
+      padding: 0;
+
+      @include media-breakpoint-down(md) {
+        align-self: center;
+      }
+
+      li {
+        padding-top: 10px;
+        padding-bottom: 0;
+        padding-right: 17px;
+
+        @include media-breakpoint-down(md) {
+          padding-right: 7px;
+        }
+
+        &:last-child {
+          padding-top: 11px;
+        }
+
+        a {
+          color: $mine-shaft;
+          font-size: 12px;
+
+          &:first-child {
+            padding-left: 0;
+          }
+        }
+
+        .co-name {
+          font-size: 14px;
+          font-weight: bold;
+          letter-spacing: 0.5px;
+        }
+      }
+    }
+
+    .login-menu-2 {
+      background-color: $white;
+      display: flex;
+      margin: 0;
+      padding: 0;
+
+      @include media-breakpoint-down(md) {
+        padding: 10px;
+        align-self: center;
+      }
+
+      li {
+        font-size: 12px;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        align-self: center;
+        letter-spacing: 0.5px;
+
+        a {
+          color: $black;
+          font-size: 12px;
+          font-weight: bold;
+          margin: 0;
+          padding-right: 14px;
+        }
+
+        img {
+          width: 19px;
+          height: 19px;
+          margin-right: 11px;
+        }
+      }
+    } // /login
+  }
+}

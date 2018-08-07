@@ -1,0 +1,6 @@
+{
+  "message": "Success message here",
+  "errors": {
+    "name": ["Invalid name"]
+  }
+}

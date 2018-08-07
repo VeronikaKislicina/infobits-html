@@ -1,0 +1,187 @@
+.small {
+  background-image: url('../img/background/raksti.jpg');
+  background-size: cover;
+  width: 100%;
+
+  .container {
+    display: flex;
+    justify-content: center;
+
+    p {
+      margin-top: 39px;
+      margin-bottom: 44px;
+      line-height: 35px;
+      font-weight: 600;
+      font-size: 25px;
+      color: $white;
+      letter-spacing: 2px;
+      align-self: center;
+      padding-top: 10px;
+    }
+  }
+}
+
+.profils-gray {
+  background: $porcelain;
+
+  .container {
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      h3 {
+        margin-top: 60px;
+        margin-bottom: 11px;
+        align-self: center;
+        color: $tundora;
+      }
+
+      h5 {
+        font-weight: 300;
+        align-self: center;
+        font-size: 16px;
+        color: $dusty-gray;
+        text-align: center;
+      }
+
+      .line {
+        width: 100px;
+        border-top: 2px solid $silver;
+        align-self: center;
+        margin-top: 22px;
+        margin-bottom: 42px;
+      }
+
+      .white-box {
+        align-self: center;
+        background: $white;
+        display: flex;
+        flex-direction: column;
+        width: 972px;
+        border: 1px solid $mercury;
+        margin-bottom: 49px;
+
+        @include media-breakpoint-down(md) {
+          width: 100%;
+          height: 100%;
+        }
+
+        form {
+          display: flex;
+          flex-direction: column;
+
+          .covering {
+            display: flex;
+            justify-content: space-between;
+            margin: 74px 101px 0 101px;
+
+            @include media-breakpoint-down(md) {
+              flex-direction: column;
+              margin: 50px;
+            }
+
+            @include media-breakpoint-down(xs) {
+              flex-direction: column;
+              margin: 17px;
+            }
+
+            .left-block, .right-block {
+              .input-wrapper {
+                display: flex;
+                position: relative;
+
+                .control {
+                  label {
+                    color: $gray;
+                    font-size: 14px;
+                    margin: 16px 0 9px 15px;
+
+                    &:nth-child(1) {
+                      margin-top: 0;
+                    }
+                  }
+                }
+
+                .form-control {
+                  outline: none;
+                  box-shadow:none !important;
+                }
+
+                input[type=password] {
+                  height: 54px;
+                  border: 1px solid $silver;
+                  border-radius: 0;
+                }
+
+                input[type=text], input[type=password] {
+                  width: 370px;
+        					background: $silver;
+        					color: $white;
+        					font-size: 14px;
+        					font-weight: bold;
+        					outline: none;
+        					border: none;
+                  padding-left: 55px;
+                  padding-top: 18px;
+                  padding-bottom: 15px;
+                  border: 1px solid $silver;
+                  border-radius: 0;
+
+        					@include media-breakpoint-down(md) {
+        						width: 100%;
+        					}
+
+                  &::placeholder {
+        						color: $white;
+        						font-size: 14px;
+        						font-weight: bold;
+        					}
+
+                  &:hover {
+                    transition: all 0.3s ease-in-out;
+                    background: lighten( $silver, 5% );
+                    border: 1px solid $atlantis;
+                  }
+
+                  &:focus {
+                    transition: all 0.3s ease-in-out;
+                    background: lighten( $silver, 5% );
+                    border: 1px solid $atlantis;
+                  }
+
+                  &::-ms-clear {
+                    display: none;
+                  }
+
+                  &::-moz-placeholder {
+                    opacity: 1;
+                  }
+
+                  &:-moz-placeholder {
+                    opacity: 1;
+                  }
+        				}
+
+                .img {
+                  position: absolute;
+                  top: 46px;
+                  left: 16px;
+            			color: $white;
+                }
+              }
+            }
+
+            .right-block {
+              margin-left: 30px;
+
+              @include media-breakpoint-down(md) {
+                margin: 15px 0 0 0;
+              }
+            }
+          }
+        } // /form
+      } // /white-box
+    } // /wrapper
+  }
+}
